@@ -11,10 +11,15 @@ const fromDollarToYen = function(valueInDollar){
     return valueInYen;
 }
 
+const fromYenToPound = function(valueInYen) {
+    let valueInPound = valueInYen / 195;
+    return valueInPound;
+}
+
 const sum = (a,b) => {
     return a + b;
 }
 
 console.log(sum(7,3));
 
-module.exports = { sum, fromEuroToDollar, fromDollarToYen};
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};
